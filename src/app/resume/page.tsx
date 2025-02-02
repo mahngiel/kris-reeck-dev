@@ -1,8 +1,46 @@
 import React from "react";
 
 import Summary from "@/components/resume/Summary";
+import ExperienceItem from "@/components/resume/ExperienceItem";
 
 export default function Resume() {
+  const workExperiences = [
+    {
+      title: "DevOps Consultant & Systems Architect",
+      company: "Mahngiel LLC",
+      period_start: "2005",
+      period_end: "Present",
+      responsibilities: [
+        "Designed scalable AWS/GCP architectures for SaaS platforms.",
+        "Implemented CI/CD pipelines with GitHub Actions & Terraform automation.",
+        "Secured cloud workloads with CloudFlare WAF & automated vulnerability scanning."
+      ],
+    },
+    {
+      title: "Senior/Principal DevOps Engineer",
+      company: "IDEXX Laboratories",
+      period_start: "Jan 2018",
+      period_end: "Present",
+      responsibilities: [
+        "Defined AWS multi-account cloud strategy, improving security & cost efficiency.",
+        "Led security compliance initiatives (SOX, SOC 2), enforcing IAM governance.",
+        "Optimized cloud costs, saving $100K+ annually through FinOps best practices.",
+        "Automated infrastructure provisioning using Terraform Cloud & StackSets."
+      ],
+    },
+    {
+      title: "Senior PHP Developer",
+      company: "By the Pixel",
+      period_start: "Dec 2014",
+      period_end: "January 2018",
+      responsibilities: [
+        "Technical leader for team developing PHP and Golang applications.",
+        "Sat on engineering committee responsible for developing FHIR-compliant APIs.",
+        "Led technical roadmap responsible for growing platform from 20 to 400 customers.",
+      ],
+    }
+  ];
+
   return (
     <div className="bg-neutral min-h-screen text-deep px-6 py-12">
       <div className="max-w-4xl mx-auto">
@@ -37,28 +75,12 @@ export default function Resume() {
 
         {/* Work Experience */}
         <section className="mb-10">
+
           <h2 className="text-2xl font-bold text-secondary border-b pb-2">Professional Experience</h2>
 
-          <div className="mt-6">
-            <h3 className="text-xl font-bold text-deep">Principal DevOps Engineer</h3>
-            <p className="text-sm text-gray-500">IDEXX Laboratories | Jan 2018 – Present</p>
-            <ul className="list-disc ml-6 mt-2 text-lg font-body">
-              <li>Defined AWS multi-account cloud strategy, improving security & cost efficiency.</li>
-              <li>Led security compliance initiatives (SOX, SOC 2), enforcing IAM governance.</li>
-              <li>Optimized cloud costs, saving $100K+ annually through FinOps best practices.</li>
-              <li>Automated infrastructure provisioning using Terraform Cloud & StackSets.</li>
-            </ul>
-          </div>
-
-          <div className="mt-6">
-            <h3 className="text-xl font-bold text-deep">DevOps Consultant & Systems Architect</h3>
-            <p className="text-sm text-gray-500">Mahngiel LLC | 2005 – Present</p>
-            <ul className="list-disc ml-6 mt-2 text-lg font-body">
-              <li>Designed scalable AWS/GCP architectures for SaaS platforms.</li>
-              <li>Implemented CI/CD pipelines with GitHub Actions & Terraform automation.</li>
-              <li>Secured cloud workloads with CloudFlare WAF & automated vulnerability scanning.</li>
-            </ul>
-          </div>
+          {workExperiences.map((experience, index) => (
+            <ExperienceItem key={index} {...experience} />
+          ))}
         </section>
 
         {/* Technical Skills */}
