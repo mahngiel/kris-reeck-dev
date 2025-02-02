@@ -1,8 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 @import 'tailwindcss';
+@import 'tailwindcss/preflight';
+
+@font-face {
+  font-family: "Bomber Escort Condensed";
+  src: url("/fonts/bomber_escort/bomberescortcond.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @theme {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --default-body-font: "Montserrat", Arial, Helvetica, sans-serif;
+    --default-header-font: "Bomber Escort Condensed", sans-serif;
+  
+    --color-primary: "#71AAB1";
+    /* Cadet Blue */
+    --color-secondary: "#31403A";
+    /* Kombu Green */
+    --color-accent: "#FAB8B5";
+    /* Spanish Pink */
+    --color-neutral: "#E5E5E5";
+    /* Platinum */
+    --color-dark: "#1A1A1A";
+    /* Black */
+    --color-deep: "#48696E";
+    /* Deep Space Sparkle */
+  
+    --background: var(--color-neutral);
+    --foreground: var(--color-deep);
 }
 
 /*
@@ -23,20 +48,9 @@
   }
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--default-body-font, Montserrat);
 }
