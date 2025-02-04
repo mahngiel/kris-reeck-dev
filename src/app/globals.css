@@ -2,29 +2,55 @@
 @import 'tailwindcss';
 
 @font-face {
-  font-family: "Bomber Escort Condensed";
+  font-family: "Bomber";
   src: url("/fonts/bomber_escort/bomberescortcond.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 @theme {
   --default-body-font: "Montserrat", Arial, Helvetica, sans-serif;
-    --default-header-font: "Bomber Escort Condensed", sans-serif;
+  --default-header-font: "Bomber", sans-serif;
+    --font-bomber: "Bomber", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+  --color-background: #0B070C;
+    --color-paper: #190e1c;
   
-    --color-primary: #71AAB1;
-    /* Cadet Blue */
-    --color-secondary: #31403A;
-    /* Kombu Green */
-    --color-accent: #FAB8B5;
-    /* Spanish Pink */
-    --color-neutral: #E5E5E5;
-    /* Platinum */
-    --color-dark: #1A1A1A;
-    /* Black */
-    --color-deep: #48696E;
-    /* Deep Space Sparkle */
+    --text-primary: #E5E5E5;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --text-disabled: rgba(255, 255, 255, 0.5);
   
-    --background: var(--color-neutral);
+    --color-primary: #9575cd;
+    --color-primary-light: rgb(170, 144, 215);
+    --color-primary-dark: rgb(104, 81, 143);
+    --color-primary-contrast: #fff;
+  
+    --color-secondary: #fab8b5;
+    --color-secondary-light: rgb(251, 198, 195);
+    --color-secondary-dark: rgb(175, 128, 126);
+    --color-secondary-contrast: rgba(0, 0, 0, 0.9);
+  
+    --color-error: #e89726;
+    --color-error-light: rgb(236, 171, 81);
+    --color-error-dark: rgb(162, 105, 26);
+    --color-error-contrast: rgba(0, 0, 0, 0.9);
+  
+    --color-warning: #fab8b5;
+    --color-warning-light: rgb(251, 198, 195);
+    --color-warning-dark: rgb(175, 128, 126);
+    --color-warning-contrast: rgba(0, 0, 0, 0.9);
+
+  --color-info: #7c4dff;
+    --color-info-light: rgb(150, 112, 255);
+    --color-info-dark: rgb(86, 53, 178);
+    --color-info-contrast: #fff;
+  
+    --color-success: #1b5e20;
+    --color-success-light: rgb(72, 126, 76);
+    --color-success-dark: rgb(18, 65, 22);
+    --color-success-contrast: #fff;
+  
+    --background: var(--color-background);
     --foreground: var(--color-deep);
 }
 
@@ -48,7 +74,14 @@
 
 
 body {
-  color: var(--foreground);
+  color: var(--text-primary);
   background: var(--background);
   font-family: var(--default-body-font, Montserrat);
+}
+
+@layer components {
+  .clip-hexagon {
+    clip-path: polygon(-50% 50%, 50% 100%, 150% 50%, 50% 0);
+    aspect-ratio: 1/cos(30deg);
+  }
 }
