@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaDiscord, FaSlack, FaAws } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaAws } from "react-icons/fa";
 import { SiToptal } from "react-icons/si";
 
 const socialLinks = [
