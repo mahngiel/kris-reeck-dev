@@ -1,73 +1,82 @@
 import React from "react";
-import { FaCode, FaDocker } from "react-icons/fa";
-import { FaCircleDollarToSlot, FaGears, FaServer } from "react-icons/fa6";
-import { CiCloudOn } from "react-icons/ci";
-import { IoInfinite, IoPeople } from "react-icons/io5";
-import { MdSecurity } from "react-icons/md";
-import { VscDebugConsole } from "react-icons/vsc";
-import { SiTerraform, SiAwslambda } from "react-icons/si";
+import { FaCode, FaDocker, FaCloud, FaCogs, FaShieldAlt, FaServer, FaChartLine, FaDollarSign, FaDatabase, FaGlobe, FaUsers, FaLock, FaRobot } from "react-icons/fa";
 
 const services = [
   {
-    title: "Cloud Architecture",
-    icon: CiCloudOn,
-    description: "I design and implement scalable, fault-tolerant cloud infrastructures on AWS and GCP. My expertise includes multi-region architectures, VPC networking, hybrid cloud setups, and cost-aware design. I build solutions that prioritize availability, performance, and security, ensuring systems can handle traffic fluctuations and recover from failures."
+ title: "Cloud Architecture & Infrastructure",
+  icon: FaCloud,
+        description: "Enterprise-scale cloud infrastructure across 400+ AWS accounts using Control Tower and Service Control Policies. VPC design, Transit Gateway implementation, and IoT platform supporting 150k connected devices processing 15M daily events."
+     },
+    {
+      title: "IoT Platform & Edge Computing",
+      icon: FaCloud,
+      description: "Enterprise IoT platform managing 150k+ veterinary medical instruments with agent software delivery and real-time data collection. Edge-to-cloud architecture processing 15M daily events across distributed hardware fleet with automated device management and monitoring."
+    },
+    {
+      title: "DevOps & CI/CD Automation", 
+      icon: FaCogs,
+      description: "Advanced CI/CD with Jenkins, GitHub Actions, and Terraform Cloud achieving 3x deployment frequency improvement. IoT agent software delivery to 150k+ field devices, zero-downtime releases, and SOX-compliant pipeline development."
+    },
+    {
+      title: "Security & Compliance Engineering",
+      icon: FaShieldAlt,
+      description: "SOC 2 and SOX compliance leadership with automated security frameworks. GitHub Enterprise migration for 12 organizations (5k repositories), secure software signing solutions, and regulatory standard adherence." 
+    },
+    {
+      title: "Site Reliability Engineering",
+      icon: FaServer,
+      description: "SRE practice implementation reducing MTTR by 300% through automated observability. System reliability engineering with ephemeral workloads, performance monitoring, and incident response optimization using Datadog and Grafana."
+    },
+    {
+      title: "Infrastructure as Code",
+      icon: FaCode,
+      description: "Expert Terraform and CloudFormation automation for consistent, maintainable deployments. Infrastructure standardization across multi-account environments with policy enforcement and governance frameworks."
+    },
+    {
+      title: "Observability & Monitoring",
+      icon: FaChartLine,
+      description: "Comprehensive monitoring with Datadog, Grafana Cloud (Loki/LGTM stacks), and CloudWatch. Performance bottleneck identification, automated alerting, and operational insights enabling proactive system management."
+    },
+    {
+      title: "Cloud Cost Optimization",
+      icon: FaDollarSign,
+      description: "FinOps leadership across multi-account AWS and GCP environments. Cost efficiency optimization, resource governance, and financial accountability frameworks driving measurable operational savings."
+    },
+    {
+      title: "Container & Serverless Solutions",
+      icon: FaDocker,
+      description: "Docker containerization, AWS Lambda, and serverless architecture expertise. ECS orchestration, API Gateway integration, and Cloud Run/Cloud Functions deployment for scalable microservices."
+    },
+    {
+      title: "Data Engineering & ETL",
+      icon: FaDatabase,
+      description: "High-volume data pipelines for IoT telemetry from 150k+ veterinary devices using AWS SNS, SQS, Lambda, and ECS. BigQuery dataset management, MySQL optimization, and Redis clustering supporting real-time medical instrument data processing."
+    },
+    {
+      title: "Multi-Cloud Strategy & Governance",
+      icon: FaGlobe,
+      description: "AWS and GCP expertise with hybrid cloud governance strategies. Well-Architected Reviews, cross-platform integration, and vendor-neutral architecture design for enterprise scalability."
+    },
+    {
+      title: "Technical Leadership & Hiring",
+      icon: FaUsers,
+      description: "Principal-level technical leadership with 15+ years experience. Technical hiring for DevOps/SRE roles, team mentoring, cross-functional collaboration, and engineering culture development across organizations."
+    },
+    {
+      title: "Hardware Fleet Management",
+      icon: FaServer,
+      description: "Large-scale IoT device lifecycle management across 150k+ veterinary medical instruments. Agent software deployment, over-the-air updates, device health monitoring, and field hardware troubleshooting with automated remediation."
+    },
+    {
+      title: "Identity & Access Management",
+      icon: FaLock,
+      description: "Enterprise IAM with SAML 2.0 and SCIM provisioning across AWS Identity Center, Google Workspaces, and JumpCloud. SSO implementation, automated user lifecycle management, and identity governance frameworks ensuring security and compliance."
   },
   {
-    title: "Serverless Architecture",
-    icon: SiAwslambda,
-    description: "I specialize in building event-driven and serverless applications using AWS Lambda, GCP Cloud Run, App Engine, and Step Functions. My experience includes designing stateless microservices, asynchronous processing pipelines, and low-latency API architectures that take advantage of pay-per-use computing while minimizing infrastructure complexity."
-  },
-  {
-    title: "DevOps Automation",
-    icon: IoInfinite,
-    description: "I automate infrastructure provisioning, deployments, and testing workflows using tools like Terraform, CloudFormation, and Ansible. By implementing infrastructure-as-code (IaC) and CI/CD pipelines, I help teams ensure consistency, reliability, and repeatability in their cloud environments."
-  },
-  {
-    title: "Containerization",
-    icon: FaDocker,
-    description: "I design and optimize lightweight, efficient Docker containers for modern applications to streamline development and bring parity with production. I deploy and manage containerized workloads using AWS ECS, ensuring highly available, scalable, and cost-effective application environments."
-  },
-  {
-    title: "CI/CD Implementation",
-    icon: FaGears,
-    description: "I build robust, automated CI/CD pipelines that enable fast, reliable, and secure application deployments. My experience includes setting up GitHub Actions, GitLab CI/CD, Jenkins, and ArgoCD, ensuring code quality with automated testing, security scanning, and deployment rollbacks."
-  },
-  {
-    title: "Infrastructure as Code",
-    icon: SiTerraform,
-    description: "I manage cloud environments through Terraform and CloudFormation, enforcing best practices for modular, version-controlled, and policy-driven infrastructure. I have experience designing multi-account AWS Organizations, automated networking, and compliance-driven infrastructure that scales efficiently."
-  },
-  {
-    title: "Security Best Practices",
-    icon: MdSecurity,
-    description: "I implement security controls at every level of cloud infrastructure, including IAM policy design, network isolation, encryption strategies, and compliance enforcement. My work includes SOC 2/SOX-compliant infrastructure, secure secret management with AWS Systems Manager, and continuous vulnerability scanning."
-  },
-  {
-    title: "Cost Optimization",
-    icon: FaCircleDollarToSlot,
-    description: "I analyze cloud spend, optimize compute/storage configurations, and implement FinOps strategies to reduce unnecessary costs. This includes identifying idle resources, implementing reserved instances and savings plans, leveraging S3 intelligent tiering, and fine-tuning autoscaling policies."
-  },
-  {
-    title: "Observability & Monitoring",
-    icon: VscDebugConsole,
-    description: "I lead teams in instrumenting applications and infrastructure with structured logging, distributed tracing, and telemetry using tools like Datadog, Prometheus, Grafana, AWS CloudWatch, and Loki. By focusing on high-value, actionable metrics rather than noise, I help organizations turn raw data into operational insights, enabling proactive issue detection, root cause analysis, and capacity planning."
-  },
-  {
-    title: "Infrastructure Management",
-    icon: FaServer,
-    description: "I manage large-scale cloud environments, ensuring system availability, security, and operational efficiency. My work includes automating infrastructure scaling, improving network latency, enforcing compliance, and reducing cloud drift through policy-based governance."
-  },
-  {
-    title: "Software Engineering",
-    icon: FaCode,
-    description: "With a background in PHP, Golang, Python, and Java, I develop CLI tools, desktop software, and high-performance backend services, APIs, and cloud-native applications. My experience spans microservices architectures, distributed systems, and optimizing application performance under load."
-  },
-  {
-    title: "Talent Screening",
-    icon: IoPeople,
-    description: "I build technical hiring processes that assess real-world engineering skills. My experience includes defining interview frameworks, writing coding challenges, and conducting technical screenings to ensure hiring decisions align with both technical needs and team culture."
-  }
+    title: "AI-Augmented Development",
+    icon: FaRobot,
+    description: "Expert in LLM engineering and AI-augmented workflows using Claude, ChatGPT, and GitHub Copilot for code generation, architecture design, and system optimization. Daily practitioner of prompt engineering, context management, and AI model integration with systematic validation approaches for production-quality deliverables and emerging MCP server implementations."
+    }
 ];
 
 export default function Dashboard() {
@@ -82,16 +91,16 @@ export default function Dashboard() {
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
           {services.map(({ title: t, description: desc, icon: Icon }) => (
             <div key={t} className="p-4 md:w-1/3">
-              <div className="flex rounded-lg h-full border-1 border-primary-dark bg-gray-800 bg-opacity-60 p-6 flex-col">
+              <div className="flex rounded-lg h-full border border-primary-dark bg-gray-800 bg-opacity-60 p-6 flex-col">
                 <div className="flex items-center mb-3">
-                  <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
+                  <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full text-white shrink-0">
                     <div className="w-10 h-10 bg-primary clip-hexagon"></div>
                     <Icon className="absolute text-white text-2xl" />
                   </div>
 
                   <h2 className="text-white text-lg title-font font-medium">{t}</h2>
                 </div>
-                <div className="flex-grow">
+                <div className="grow">
                   <p className="leading-relaxed text-base">{desc}</p>
                 </div>
               </div>

@@ -1,11 +1,8 @@
 import { FaGithub, FaLinkedin, FaAws } from "react-icons/fa";
-import { SiToptal } from "react-icons/si";
 
 const socialLinks = [
   { name: "GitHub", url: "https://github.com/mahngiel", icon: FaGithub, altText: "View my developer profile" },
-  { name: "LinkedIn", url: "https://linkedin.com/in/krisreeck", icon: FaLinkedin, altText: "View my professional profile" },
-  { name: "Toptal", url: "https://www.toptal.com/resume/kris-reeck", icon: SiToptal, altText: "Hire me on TopTal" },
-  { name: "AWS", url: "https://iq.aws/e/mahngiel", icon: FaAws, altText: "Hire me on AWS IQ" },
+  { name: "LinkedIn", url: "https://linkedin.com/in/krisreeck", icon: FaLinkedin, altText: "View my professional profile" }
 ];
 
 export default function ContactLinks() {

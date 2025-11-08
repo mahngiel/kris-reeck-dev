@@ -6,7 +6,7 @@ import { TbAutomation } from "react-icons/tb";
 
 const navLinks = [
   { name: "Home", href: "/", icon: MdDashboard },
-  { name: "Resume", href: "#", icon: MdArticle },
+  { name: "Resume", href: "/resume", icon: MdArticle },
   { name: "Projects", href: "#", icon: HiBeaker },
   { name: "Blog", href: "#", icon: FaPencil },
   { name: "Game Dev", href: "#", icon: FaGamepad },

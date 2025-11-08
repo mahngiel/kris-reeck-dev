@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LeftColumn from "@components/global/LeftColumn";
+import RightColumn from "@components/global/RightColumn";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -26,10 +27,10 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         {/* Main DOM */}
-        <div className="grid grid-rows-6 min-h-screen gap-1.5 p-1.5">
+        <div className="grid grid-rows-[1fr_auto] min-h-screen gap-1.5 p-1.5">
 
           {/* Primary Content */}
-          <div className="row-span-5 grid grid-cols-6 gap-1.5">
+          <div className="grid grid-cols-6 gap-1.5">
 
             {/* Left Column */}
             <nav className="bg-paper col-span-1 rounded">
@@ -37,12 +38,13 @@ export default function RootLayout({
             </nav>
 
             {/* Center Column (Main Content) */}
-            <main className="bg-paper col-span-4 flex justify-center items-center rounded overflow-hidden">
+            <main className="bg-paper col-span-4 flex rounded overflow-hidden">
               {children}
             </main>
 
             {/* Right Column */}
             <aside className="bg-paper col-span-1 rounded">
+              <RightColumn />
             </aside>
 
           </div>
