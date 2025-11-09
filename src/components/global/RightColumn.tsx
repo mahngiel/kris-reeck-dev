@@ -62,30 +62,12 @@ const skillCategories = {
   security: [
     { name: 'SOC 2', icon: FaShieldAlt, active: true },
     { name: 'SOX', icon: FaLock, active: true },
-    { name: 'PCI DSS', icon: FaShieldAlt, active: true },
-    { name: 'SAML 2', icon: FaLock, active: true },
+    { name: 'EDR', icon: FaLock, active: true },
     { name: 'SCIM', icon: FaUsers, active: true },
     { name: 'IAM', icon: FaUsers, active: true },
     { name: 'WAF', icon: SiCloudflare, active: true },
   ],
-  frameworks: [
-    { name: 'Next.js', icon: SiNextdotjs, active: true },
-    { name: 'React', icon: SiReact, active: true },
-    { name: 'Laravel', icon: SiLaravel, active: true },
-    { name: 'Spring Boot', icon: SiSpring, active: true },
-    { name: 'Django', icon: SiDjango, active: true },
-    { name: 'Typer', icon: FaPython, active: true },
-    { name: 'Node.js', icon: FaNodeJs, active: true },
-  ],
-  infrastructure: [
-    { name: 'Linux', icon: SiLinux, active: true },
-    { name: 'VMware', icon: SiVmware, active: true },
-    { name: 'Nginx', icon: SiNginx, active: true },
-    { name: 'Apache', icon: SiApache, active: true },
-  ],
   ai: [
-    { name: 'Claude', icon: FaRobot, active: true },
-    { name: 'ChatGPT', icon: SiOpenai, active: true },
     { name: 'GitHub Copilot', icon: SiGithubcopilot, active: true },
     { name: 'Prompt Engineering', icon: FaCode, active: true },
     { name: 'LLM Integration', icon: FaCogs, active: true },
@@ -161,6 +143,23 @@ export default function RightColumn() {
           </div>
         </div>
 
+        {/* AI & Development Tools */}
+        <div className="mb-6">
+          <h3 className="text-sm font-semibold mb-3 uppercase tracking-wide text-pink-400 border-l-4 border-pink-500 px-3 py-2 rounded">AI & Development</h3>
+          <div className="space-y-1">
+            {skillCategories.ai.map(({ name, icon: Icon, active }) => (
+              <div key={name} className="flex w-full bg-gray-800 bg-opacity-60 transition-all duration-200">
+                <div className="flex bg-pink-500 p-2">
+                  <Icon className="w-5 h-5" />
+                </div>
+                <div className="flex p-2">
+                  <span className="font-medium">{name}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Containers */}
         <div className="mb-6">
           <h3 className="text-sm font-semibold mb-3 uppercase tracking-wide text-cyan-400 border-l-4 border-cyan-500 px-3 py-2 rounded">Containers</h3>
@@ -202,57 +201,6 @@ export default function RightColumn() {
             {skillCategories.programming.map(({ name, icon: Icon, active }) => (
               <div key={name} className="flex w-full bg-gray-800 bg-opacity-60 transition-all duration-200">
                 <div className="flex bg-purple-500 p-2">
-                  <Icon className="w-5 h-5" />
-                </div>
-                <div className="flex p-2">
-                  <span className="font-medium">{name}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Frameworks */}
-        <div className="mb-6">
-          <h3 className="text-sm font-semibold mb-3 uppercase tracking-wide text-indigo-400 border-l-4 border-indigo-500 px-3 py-2 rounded">Frameworks</h3>
-          <div className="space-y-1">
-            {skillCategories.frameworks.map(({ name, icon: Icon, active }) => (
-              <div key={name} className="flex w-full bg-gray-800 bg-opacity-60 transition-all duration-200">
-                <div className="flex bg-indigo-500 p-2">
-                  <Icon className="w-5 h-5" />
-                </div>
-                <div className="flex p-2">
-                  <span className="font-medium">{name}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* AI & Development Tools */}
-        <div className="mb-6">
-          <h3 className="text-sm font-semibold mb-3 uppercase tracking-wide text-pink-400 border-l-4 border-pink-500 px-3 py-2 rounded">AI & Development</h3>
-          <div className="space-y-1">
-            {skillCategories.ai.map(({ name, icon: Icon, active }) => (
-              <div key={name} className="flex w-full bg-gray-800 bg-opacity-60 transition-all duration-200">
-                <div className="flex bg-pink-500 p-2">
-                  <Icon className="w-5 h-5" />
-                </div>
-                <div className="flex p-2">
-                  <span className="font-medium">{name}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Infrastructure */}
-        <div className="mb-6">
-          <h3 className="text-sm font-semibold mb-3 uppercase tracking-wide text-teal-400 border-l-4 border-teal-500 px-3 py-2 rounded">Infrastructure</h3>
-          <div className="space-y-1">
-            {skillCategories.infrastructure.map(({ name, icon: Icon, active }) => (
-              <div key={name} className="flex w-full bg-gray-800 bg-opacity-60 transition-all duration-200">
-                <div className="flex bg-teal-500 p-2">
                   <Icon className="w-5 h-5" />
                 </div>
                 <div className="flex p-2">

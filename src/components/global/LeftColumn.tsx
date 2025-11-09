@@ -7,7 +7,7 @@ export default function LeftColumn() {
     <aside className="w-[275px] flex flex-col items-center text-neutral p-2 shadow-lg">
 
       {/* Profile Section */}
-      <section className="w-full text-center pl-[12px]">
+      <section className="w-full text-center pl-3">
         <figure className="w-[250px] h-[250px] overflow-hidden border-2 border-primary shadow-md">
           <Image
             src="/img/hoodie_pfp_cropped.png" // Correct way to reference images from `public/`
