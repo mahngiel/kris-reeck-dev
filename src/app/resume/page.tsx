@@ -33,7 +33,7 @@ export default function ResumePage() {
                 <p>• AWS, GCP, &amp; Azure Cloud Architecture</p>
                 <p>• Infrastructure as Code</p>
                 <p>• Container Orchestration</p>
-                <p>• CI/CD Pipeline Engineering</p>
+                <p>• CI/CD Pipeline Engineering &amp; GitOps</p>
                 <p>• Site Reliability Engineering</p>
                 <p>• Security &amp; Compliance</p>
               </div>
@@ -41,9 +41,10 @@ export default function ResumePage() {
                 <p>• IoT Platform Engineering & Edge Computing</p>
                 <p>• AI-Augmented Development</p>
                 <p>• Polyglot Programming</p>
-                <p>• Database Management</p>
                 <p>• Identity &amp; Access Management</p>
                 <p>• Monitoring &amp; Observability</p>
+                <p>• API Gateway &amp; Developer Experience Platforms</p>
+                <p>• Advanced Deployment Strategies (Blue/Green, Canary, A/B)</p>
               </div>
             </div>
           </section>
@@ -52,11 +53,12 @@ export default function ResumePage() {
           <section>
             <h3 className="text-lg font-bold text-primary border-b border-primary pb-1 mb-4">KEY ACHIEVEMENTS</h3>
             <ul className="list-disc list-inside text-gray-300 space-y-1">
-              <li>Improved deployment frequency by 500% through advanced CI/CD pipeline optimizations</li>
+              <li>Improved deployment frequency by 500% through advanced CI/CD pipeline optimizations and GitOps automation</li>
               <li>Reduced system MTTR by 300% via automated observability and incident response frameworks</li>
               <li>Successfully managed IoT platform scaling to support 150k+ connected medical devices</li>
+              <li>Built enterprise-grade API Gateway solutions supporting both internal developer platforms and public customer-facing services</li>
+              <li>Implemented zero-downtime deployment strategies (blue/green, canary, A/B testing) ensuring service availability</li>
               <li>Led enterprise security compliance initiatives achieving SOC 2 and SOX certification</li>
-              <li>Architected cost-effective multi-cloud strategies resulting in significant operational savings</li>
               <li>Pioneered AI-augmented development practices improving code quality and development velocity</li>
             </ul>
           </section>
@@ -74,9 +76,18 @@ export default function ResumePage() {
                 <span className="text-gray-400">Jan 2008 - Present</span>
               </div>
               <ul className="list-disc list-inside text-gray-300 space-y-1 ml-4">
-                <li>Provide AWS cloud architecture, security audits, and cost optimization consulting</li>
-                <li>Design and implement infrastructure automation solutions for enterprise clients</li>
-                <li>Develop custom applications and APIs using modern frameworks and cloud-native technologies</li>
+                <li>Conducted AWS Well-Architected Reviews and security audits, identifying vulnerabilities and developing remediation strategies for enterprise clients</li>
+                <li>Architected highly available multi-cloud infrastructure across AWS and GCP, optimizing for cost efficiency and performance</li>
+                <li>Built AWS API Gateway infrastructure with usage plans and throttling for public customer-facing APIs, ensuring scalable and secure access management</li>
+                <li>Implemented GitOps workflows across GitLab, CircleCi, and GitHub Actions to orchestrate CI/CD pipeline automation and application version releases, improving deployment consistency and traceability</li>
+                <li>Automated infrastructure provisioning using CloudFormation and Terraform, reducing deployment time and human error</li>
+                <li>Built scalable streaming media infrastructure with real-time advert injection capabilities</li>
+                <li>Designed ETL pipelines using AWS SNS, SQS, Lambda, ECS, and BigQuery for high-volume data processing</li>
+                <li>Implemented enterprise SSO solutions across AWS Identity Center, Google Workspaces, and JumpCloud</li>
+                <li>Established comprehensive observability using Grafana Cloud (Loki/LGTM stacks) for proactive performance monitoring</li>
+                <li>Developed polyglot applications and tooling (Go, Python, PHP) for diverse client requirements including financial services, media streaming, and game development</li>
+                <li>Led SOC 1/2 compliance initiatives and developed IT security operating procedures</li>
+                <li>Provided technical leadership including talent assessment and architectural guidance for engineering teams</li>
               </ul>
             </div>
 
@@ -89,28 +100,35 @@ export default function ResumePage() {
                 <span className="text-gray-400">Jan 2018 - Present</span>
               </div>
               <ul className="list-disc list-inside text-gray-300 space-y-1 ml-4">
-                <li>Lead platform engineering for global IoT veterinary medical instrument platform supporting 150k+ devices</li>
-                <li>Manage enterprise AWS infrastructure across 400+ accounts using Control Tower and Service Control Policies</li>
-                <li>Architect and maintain real-time data processing pipelines handling 15M+ daily events</li>
-                <li>Implement SRE practices resulting in 300% MTTR reduction through automated observability</li>
-                <li>Drive SOC 2 and SOX compliance initiatives with automated security frameworks</li>
-                <li>Lead GitHub Enterprise migration for 12 organizations encompassing 5k+ repositories</li>
-                <li>Deploy AI-augmented development workflows using GitHub Copilot and LLM integration</li>
+                <li>Lead platform engineering for global IoT veterinary medical instrument platform supporting 150k+ devices processing 15M+ daily events</li>
+                <li>Architected enterprise AWS infrastructure across 400+ accounts using Control Tower, SCPs, and Transit Gateway for secure multi-account governance</li>
+                <li>Built internal developer-facing API using AWS API Gateway for AWS account management, GitHub migration workflows, and Entra ID SSO app provisioning</li>
+                <li>Engineered zero-downtime deployment pipelines implementing blue/green, canary, and A/B testing strategies for continuous delivery at scale</li>
+                <li>Founded and led specialized SRE team, implementing automated observability and ephemeral workloads resulting in 300% MTTR reduction</li>
+                <li>Orchestrated GitHub Enterprise migration for 12 organizations (5k+ repositories) and deployed AI-augmented development workflows with GitHub Copilot</li>
+                <li>Drove SOC 2 and SOX compliance initiatives through automated security frameworks and vulnerability detection tools</li>
+                <li>Developed polyglot applications (Python, Node.js, Go, Java) for Lambda-based data processing, reporting, and automated testing infrastructure</li>
+                <li>Influenced organizational cloud strategy and architectural decisions as key member of executive planning groups</li>
+                <li>Mentored engineering teams on modern practices including containerization, SRE methodologies, and security standards</li>
+                <li>Designed comprehensive system architecture diagrams enabling cross-functional teams to identify bottlenecks and assess security risks</li>
               </ul>
             </div>
 
             <div className="mb-6">
               <div className="flex justify-between items-start mb-2">
                 <div>
-                  <h4 className="font-bold text-white">Senior Developer</h4>
-                  <p className="text-secondary">By The Pixel, LLC</p>
+                  <h4 className="font-bold text-white">Senior Developer & Technical Lead</h4>
+                  <p className="text-secondary">By The Pixel, LLC & Web Development Experience</p>
                 </div>
-                <span className="text-gray-400">Dec 2014 - Jan 2018</span>
+                <span className="text-gray-400">2008 - Jan 2018</span>
               </div>
               <ul className="list-disc list-inside text-gray-300 space-y-1 ml-4">
-                <li>Senior PHP developer and mentor in Agile development environment</li>
-                <li>Maintained legacy applications and developed new microservices</li>
-                <li>Provided technical leadership and delivery forecasting for development teams</li>
+                <li>Led full-stack development initiatives across PHP, JavaScript, and emerging cloud technologies, establishing foundation for DevOps expertise</li>
+                <li>Architected scalable web applications and RESTful APIs serving high-traffic client portfolios in financial services and e-commerce</li>
+                <li>Pioneered containerization and deployment automation strategies, reducing deployment time and improving application reliability</li>
+                <li>Mentored development teams in Agile methodologies while implementing CI/CD practices and version control workflows</li>
+                <li>Transitioned legacy monolithic applications to microservices architecture, improving system maintainability and performance</li>
+                <li>Established development standards and code review processes that enhanced team productivity and code quality</li>
               </ul>
             </div>
           </section>
