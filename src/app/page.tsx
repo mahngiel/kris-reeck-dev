@@ -3,80 +3,65 @@ import { FaCode, FaDocker, FaCloud, FaCogs, FaShieldAlt, FaServer, FaChartLine, 
 
 const services = [
   {
- title: "Cloud Architecture & Infrastructure",
-  icon: FaCloud,
-        description: "Enterprise-scale cloud infrastructure across 400+ AWS accounts using Control Tower and Service Control Policies. VPC design, Transit Gateway implementation, and IoT platform supporting 150k connected devices processing 15M daily events."
-     },
-    {
-      title: "IoT Platform & Edge Computing",
-      icon: FaCloud,
-      description: "Enterprise IoT platform managing 150k+ veterinary medical instruments with agent software delivery and real-time data collection. Edge-to-cloud architecture processing 15M daily events across distributed hardware fleet with automated device management and monitoring."
-    },
-    {
-      title: "DevOps & CI/CD Automation", 
-      icon: FaCogs,
-      description: "Advanced CI/CD with Jenkins, GitHub Actions, and Terraform Cloud achieving 3x deployment frequency improvement. IoT agent software delivery to 150k+ field devices, zero-downtime releases, and SOX-compliant pipeline development."
-    },
-    {
-      title: "Security & Compliance Engineering",
-      icon: FaShieldAlt,
-      description: "SOC 2 and SOX compliance leadership with automated security frameworks. GitHub Enterprise migration for 12 organizations (5k repositories), secure software signing solutions, and regulatory standard adherence." 
-    },
-    {
-      title: "Site Reliability Engineering",
-      icon: FaServer,
-      description: "SRE practice implementation reducing MTTR by 300% through automated observability. System reliability engineering with ephemeral workloads, performance monitoring, and incident response optimization using Datadog and Grafana."
-    },
-    {
-      title: "Infrastructure as Code",
-      icon: FaCode,
-      description: "Expert Terraform and CloudFormation automation for consistent, maintainable deployments. Infrastructure standardization across multi-account environments with policy enforcement and governance frameworks."
-    },
-    {
-      title: "Observability & Monitoring",
-      icon: FaChartLine,
-      description: "Comprehensive monitoring with Datadog, Grafana Cloud (Loki/LGTM stacks), and CloudWatch. Performance bottleneck identification, automated alerting, and operational insights enabling proactive system management."
-    },
-    {
-      title: "Cloud Cost Optimization",
-      icon: FaDollarSign,
-      description: "FinOps leadership across multi-account AWS and GCP environments. Cost efficiency optimization, resource governance, and financial accountability frameworks driving measurable operational savings."
-    },
-    {
-      title: "Container & Serverless Solutions",
-      icon: FaDocker,
-      description: "Docker containerization, AWS Lambda, and serverless architecture expertise. ECS orchestration, API Gateway integration, and Cloud Run/Cloud Functions deployment for scalable microservices."
-    },
-    {
-      title: "Data Engineering & ETL",
-      icon: FaDatabase,
-      description: "High-volume data pipelines for IoT telemetry from 150k+ veterinary devices using AWS SNS, SQS, Lambda, and ECS. BigQuery dataset management, MySQL optimization, and Redis clustering supporting real-time medical instrument data processing."
-    },
-    {
-      title: "Multi-Cloud Strategy & Governance",
-      icon: FaGlobe,
-      description: "AWS and GCP expertise with hybrid cloud governance strategies. Well-Architected Reviews, cross-platform integration, and vendor-neutral architecture design for enterprise scalability."
-    },
-    {
-      title: "Technical Leadership & Hiring",
-      icon: FaUsers,
-      description: "Principal-level technical leadership with 15+ years experience. Technical hiring for DevOps/SRE roles, team mentoring, cross-functional collaboration, and engineering culture development across organizations."
-    },
-    {
-      title: "Hardware Fleet Management",
-      icon: FaServer,
-      description: "Large-scale IoT device lifecycle management across 150k+ veterinary medical instruments. Agent software deployment, over-the-air updates, device health monitoring, and field hardware troubleshooting with automated remediation."
-    },
-    {
-      title: "Identity & Access Management",
-      icon: FaLock,
-      description: "Enterprise IAM with SAML 2.0 and SCIM provisioning across AWS Identity Center, Google Workspaces, and JumpCloud. SSO implementation, automated user lifecycle management, and identity governance frameworks ensuring security and compliance."
+    title: "Scale Your Cloud Infrastructure",
+    icon: FaCloud,
+    description: "Transform your business with enterprise-grade cloud architecture that grows with you. I'll design secure, cost-effective multi-cloud strategies to leverage AWS, Azure, and Google Cloud to maximize scalability and reliability."
   },
   {
-    title: "AI-Augmented Development",
+    title: "Accelerate Product Development",
+    icon: FaCogs,
+    description: "Ship features 5x faster with automated CI/CD pipelines and GitOps workflows. I'll eliminate deployment bottlenecks, reduce manual errors, and create self-service platforms that empower your development teams to focus on innovation."
+  },
+  {
+    title: "Reduce Operational Costs",
+    icon: FaDollarSign,
+    description: "Cut your cloud spending by 30-50% without sacrificing performance. I'll implement FinOps practices, rightsizing strategies, and automated governance that provides real-time cost visibility and accountability across your organization."
+  },
+  {
+    title: "Achieve Compliance Certification",
+    icon: FaShieldAlt,
+    description: "Navigate SOC 2, SOX, and enterprise security requirements with confidence. I'll build automated compliance frameworks and security-first architectures that satisfy auditors while maintaining developer productivity."
+  },
+  {
+    title: "Eliminate System Downtime",
+    icon: FaServer,
+    description: "Transform your reliability posture with SRE practices that reduce incidents by 70%. I'll implement proactive monitoring, automated incident response, and chaos engineering to ensure your systems stay online when it matters most."
+  },
+  {
+    title: "Modernize Legacy Systems",
+    icon: FaCode,
+    description: "Migrate from legacy infrastructure to modern, maintainable solutions without business disruption. I'll create Infrastructure as Code that standardizes deployments and enables rapid scaling across environments."
+  },
+  {
+    title: "Gain System Visibility",
+    icon: FaChartLine,
+    description: "Get complete observability into your systems with actionable insights. I'll implement monitoring strategies that predict problems before they impact customers and provide data-driven optimization recommendations."
+  },
+  {
+    title: "Build Developer Platforms",
+    icon: FaGlobe,
+    description: "Create internal developer platforms that accelerate time-to-market. I'll design self-service infrastructure, API gateways, and deployment workflows that reduce cognitive load and improve developer experience."
+  },
+  {
+    title: "Scale IoT & Edge Solutions",
+    icon: FaDatabase,
+    description: "Handle millions of connected devices with confidence. I'll architect edge-to-cloud platforms that process real-time data streams, manage device lifecycles, and provide actionable business intelligence from your IoT investments."
+  },
+  {
+    title: "Implement Zero-Trust Security",
+    icon: FaLock,
+    description: "Protect your organization with enterprise identity and access management. I'll design SSO solutions, automated user provisioning, and security policies that defend against threats while simplifying user experience."
+  },
+  {
+    title: "Leverage AI for Competitive Advantage",
     icon: FaRobot,
-    description: "Expert in LLM engineering and AI-augmented workflows using Claude, ChatGPT, and GitHub Copilot for code generation, architecture design, and system optimization. Daily practitioner of prompt engineering, context management, and AI model integration with systematic validation approaches for production-quality deliverables and emerging MCP server implementations."
-    }
+    description: "Integrate AI-augmented development workflows that improve code quality and accelerate delivery. I'll help your teams adopt LLM tools, implement intelligent automation, and build AI-enhanced products that differentiate your business."
+  },
+  {
+    title: "Build High-Performance Teams",
+    icon: FaUsers,
+    description: "Scale your engineering organization with proven leadership strategies. I'll establish DevOps culture, mentor technical talent, implement hiring processes, and create the engineering practices that enable sustained growth."
+  }
 ];
 
 export default function Dashboard() {
